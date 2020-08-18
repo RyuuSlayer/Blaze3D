@@ -1,5 +1,5 @@
 # Blazed3D
-Blaze3D Engine
+Blaze is primarily an early-stage interactive application and rendering engine for Windows.
 
 # Getting Started
 Visual Studio 2017 or 2019 is recommended, Blaze is officially untested on other development environments whilst we focus on a Windows build.

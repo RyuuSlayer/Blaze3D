@@ -1,4 +1,4 @@
-# Blazed3D
+# Blaze3D
 Blaze is primarily an early-stage interactive application and rendering engine for Windows.
 
 # Getting Started

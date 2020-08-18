@@ -2,7 +2,7 @@
 Blaze3D Engine
 
 # Getting Started
-Visual Studio 2017 or 2019 is recommended, Hazel is officially untested on other development environments whilst we focus on a Windows build.
+Visual Studio 2017 or 2019 is recommended, Blaze is officially untested on other development environments whilst we focus on a Windows build.
 
 You can clone the repository to a local destination using git:
 

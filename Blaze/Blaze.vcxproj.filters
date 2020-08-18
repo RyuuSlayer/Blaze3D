@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Blaze">
+      <UniqueIdentifier>{1337E60C-7F4B-0EBE-48CD-B11DB4A00AEF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Blaze.h" />
+    <ClInclude Include="src\Blaze\Application.h">
+      <Filter>Blaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Core.h">
+      <Filter>Blaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\EntryPoint.h">
+      <Filter>Blaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Log.h">
+      <Filter>Blaze</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Blaze\Application.cpp">
+      <Filter>Blaze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\Log.cpp">
+      <Filter>Blaze</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

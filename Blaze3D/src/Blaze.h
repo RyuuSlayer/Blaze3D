@@ -1,0 +1,9 @@
+#pragma once
+
+// For use by Blaze applications
+
+#include "Blaze/Application.h"
+
+// ---Entry Point----------------------
+#include "Blaze/EntryPoint.h"
+// ------------------------------------

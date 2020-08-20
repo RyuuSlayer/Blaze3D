@@ -158,6 +158,7 @@
     <ClInclude Include="src\Blaze\Events\KeyEvent.h" />
     <ClInclude Include="src\Blaze\Events\MouseEvent.h" />
     <ClInclude Include="src\Blaze\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Blaze\Input.h" />
     <ClInclude Include="src\Blaze\Layer.h" />
     <ClInclude Include="src\Blaze\LayerStack.h" />
     <ClInclude Include="src\Blaze\Log.h" />
@@ -165,6 +166,7 @@
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\bzpch.h" />
+    <ClInclude Include="src\Platform\Windows\Windowsinput.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Application.cpp" />
@@ -177,6 +179,7 @@
     <ClCompile Include="src\bzpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\Windowsinput.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">

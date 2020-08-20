@@ -37,7 +37,7 @@ namespace Blaze {
 		int m_RepeatCount;
 	};
 
-	class HAZEL_API KeyReleasedEvent : public KeyEvent
+	class BLAZE_API KeyReleasedEvent : public KeyEvent
 	{
 	public:
 		KeyReleasedEvent(int keycode)

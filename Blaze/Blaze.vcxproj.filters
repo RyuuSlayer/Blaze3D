@@ -67,6 +67,8 @@
     <ClInclude Include="src\bzpch.h" />
     <ClInclude Include="src\Blaze\Input.h" />
     <ClInclude Include="src\Platform\Windows\Windowsinput.h" />
+    <ClInclude Include="src\Blaze\KeyCodes.h" />
+    <ClInclude Include="src\Blaze\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Application.cpp">

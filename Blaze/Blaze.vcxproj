@@ -140,6 +140,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Blaze.h" />
     <ClInclude Include="src\Blaze\Application.h" />
     <ClInclude Include="src\Blaze\Core.h" />
@@ -155,6 +156,7 @@
     <ClInclude Include="src\Blaze\LayerStack.h" />
     <ClInclude Include="src\Blaze\Log.h" />
     <ClInclude Include="src\Blaze\MouseButtonCodes.h" />
+    <ClInclude Include="src\Blaze\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Blaze\Window.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Platform\Windows\Windowsinput.h" />
@@ -569,6 +571,7 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Blaze\Application.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiLayer.cpp" />

@@ -13,8 +13,14 @@
     <Filter Include="src\Blaze\ImGui">
       <UniqueIdentifier>{14A2E8A5-802D-566A-893E-D95EF548B26A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Blaze\Renderer">
+      <UniqueIdentifier>{50400C56-3C24-CDAB-A584-C7FE9187B72D}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\OpenGL">
+      <UniqueIdentifier>{35A49437-A105-7245-2A73-B8F796D3A804}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Platform\Windows">
       <UniqueIdentifier>{5B054582-4794-CE4B-F0B2-E246DC20DFF1}</UniqueIdentifier>
@@ -87,8 +93,17 @@
     <ClInclude Include="src\Blaze\MouseButtonCodes.h">
       <Filter>src\Blaze</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Renderer\GraphicsContext.h">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Renderer\Shader.h">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Window.h">
       <Filter>src\Blaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>src\Platform\Windows</Filter>
@@ -1323,9 +1338,9 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blaze\Renderer\GraphicsContext.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
-    <ClInclude Include="src\Blaze\Renderer\Shader.h" />
+    <ClInclude Include="src\Blaze\Renderer\Buffer.h" />
+    <ClInclude Include="src\Blaze\Renderer\Renderer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Application.cpp">
@@ -1346,6 +1361,12 @@
     <ClCompile Include="src\Blaze\Log.cpp">
       <Filter>src\Blaze</Filter>
     </ClCompile>
+    <ClCompile Include="src\Blaze\Renderer\Shader.cpp">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
@@ -1355,7 +1376,8 @@
     <ClCompile Include="src\bzpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
-    <ClCompile Include="src\Blaze\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
   </ItemGroup>
 </Project>

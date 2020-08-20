@@ -4,6 +4,9 @@
     <Filter Include="Blaze">
       <UniqueIdentifier>{1337E60C-7F4B-0EBE-48CD-B11DB4A00AEF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Blaze\Events">
+      <UniqueIdentifier>{97CF3A47-8332-CAEB-2CB8-02A218FA956E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Blaze.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Blaze\EntryPoint.h">
       <Filter>Blaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Events\ApplicationEvent.h">
+      <Filter>Blaze\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Events\Event.h">
+      <Filter>Blaze\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Events\KeyEvent.h">
+      <Filter>Blaze\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Events\MouseEvent.h">
+      <Filter>Blaze\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Blaze\Log.h">
       <Filter>Blaze</Filter>

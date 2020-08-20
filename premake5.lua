@@ -11,6 +11,12 @@ workspace "Blaze"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Blaze/vendor/GLFW/include"
+
+include "Blaze/vendor/GLFW"
+
 project "Blaze"
 	location "Blaze"
 	kind "SharedLib"
@@ -31,7 +37,14 @@ project "Blaze"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

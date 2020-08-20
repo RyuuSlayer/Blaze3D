@@ -6,6 +6,8 @@
 #include "Blaze/Layer.h"
 #include "Blaze/Log.h"
 
+#include "Blaze/ImGui/ImGuiLayer.h"
+
 // ---Entry Point----------------------
 #include "Blaze/EntryPoint.h"
 // ------------------------------------

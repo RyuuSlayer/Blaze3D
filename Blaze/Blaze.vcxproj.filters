@@ -37,6 +37,12 @@
     <ClInclude Include="src\Blaze\Events\MouseEvent.h">
       <Filter>Blaze\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Layer.h">
+      <Filter>Blaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\LayerStack.h">
+      <Filter>Blaze</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Log.h">
       <Filter>Blaze</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Application.cpp">
+      <Filter>Blaze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\Layer.cpp">
+      <Filter>Blaze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\LayerStack.cpp">
       <Filter>Blaze</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Log.cpp">

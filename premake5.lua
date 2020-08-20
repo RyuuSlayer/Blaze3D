@@ -16,6 +16,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Blaze/vendor/GLFW/include"
 IncludeDir["Glad"] = "Blaze/vendor/Glad/include"
 IncludeDir["ImGui"] = "Blaze/vendor/imgui"
+IncludeDir["glm"] = "Blaze/vendor/glm"
 
 group "Dependencies"
 	include "Blaze/vendor/GLFW"
@@ -39,7 +40,9 @@ project "Blaze"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
 	}
 
 	includedirs
@@ -48,7 +51,8 @@ project "Blaze"
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links 
@@ -108,7 +112,8 @@ project "Sandbox"
 	includedirs
 	{
 		"Blaze/vendor/spdlog/include",
-		"Blaze/src"
+		"Blaze/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links

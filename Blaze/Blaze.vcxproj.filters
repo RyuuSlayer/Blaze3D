@@ -46,6 +46,12 @@
     <ClInclude Include="src\Blaze\ImGui\ImGuiLayer.h">
       <Filter>Blaze\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Input.h">
+      <Filter>Blaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\KeyCodes.h">
+      <Filter>Blaze</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Layer.h">
       <Filter>Blaze</Filter>
     </ClInclude>
@@ -53,6 +59,9 @@
       <Filter>Blaze</Filter>
     </ClInclude>
     <ClInclude Include="src\Blaze\Log.h">
+      <Filter>Blaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\MouseButtonCodes.h">
       <Filter>Blaze</Filter>
     </ClInclude>
     <ClInclude Include="src\Blaze\Window.h">
@@ -64,11 +73,10 @@
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\Windowsinput.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\bzpch.h" />
-    <ClInclude Include="src\Blaze\Input.h" />
-    <ClInclude Include="src\Platform\Windows\Windowsinput.h" />
-    <ClInclude Include="src\Blaze\KeyCodes.h" />
-    <ClInclude Include="src\Blaze\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Application.cpp">
@@ -92,7 +100,9 @@
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\Windowsinput.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\bzpch.cpp" />
-    <ClCompile Include="src\Platform\Windows\Windowsinput.cpp" />
   </ItemGroup>
 </Project>

@@ -7,3 +7,6 @@
 [submodule "Blaze/vendor/imgui"]
 	path = Blaze/vendor/imgui
 	url = https://github.com/TheCherno/imgui
+[submodule "Blaze/vendor/glm"]
+	path = Blaze/vendor/glm
+	url = https://github.com/g-truc/glm

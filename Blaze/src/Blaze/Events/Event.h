@@ -79,4 +79,5 @@ namespace Blaze {
 	{
 		return os << e.ToString();
 	}
+
 }

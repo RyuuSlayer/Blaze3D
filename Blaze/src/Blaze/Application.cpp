@@ -1,3 +1,4 @@
+#include "bzpch.h"
 #include "Application.h"
 
 #include "Blaze/Events/ApplicationEvent.h"

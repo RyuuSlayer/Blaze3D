@@ -1,9 +1,7 @@
 #pragma once
 
+#include "bzpch.h"
 #include "Blaze/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Blaze {
 

@@ -19,6 +19,9 @@ project "Blaze"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "bzpch.h"
+	pchsource "Blaze/src/bzpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

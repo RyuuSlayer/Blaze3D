@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Blaze {
 
 	class BLAZE_API WindowResizeEvent : public Event

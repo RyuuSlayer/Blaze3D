@@ -18,6 +18,11 @@ namespace Blaze {
 		glfwMakeContextCurrent(m_WindowHandle);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		BZ_CORE_ASSERT(status, "Failed to initialize Glad!");
+
+		BZ_CORE_INFO("OpenGL Info:");
+		BZ_CORE_INFO("  Vendor: {0}", glGetString(GL_VENDOR));
+		BZ_CORE_INFO("  Renderer: {0}", glGetString(GL_RENDERER));
+		BZ_CORE_INFO("  Version: {0}", glGetString(GL_VERSION));
 	}
 
 	void OpenGLContext::SwapBuffers()

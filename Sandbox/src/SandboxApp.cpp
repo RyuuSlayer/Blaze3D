@@ -1,5 +1,7 @@
 #include <Blaze.h>
 
+#include "imgui/imgui.h"
+
 class ExampleLayer : public Blaze::Layer
 {
 public:
@@ -12,6 +14,13 @@ public:
 	{
 		if (Blaze::Input::IsKeyPressed(BZ_KEY_TAB))
 			BZ_TRACE("Tab key is pressed (poll)!");
+	}
+
+	virtual void OnImGuiRender() override
+	{
+		ImGui::Begin("Test");
+		ImGui::Text("Hello World");
+		ImGui::End();
 	}
 
 	void OnEvent(Blaze::Event& event) override
@@ -33,7 +42,6 @@ public:
 	Sandbox()
 	{
 		PushLayer(new ExampleLayer());
-		PushOverlay(new Blaze::ImGuiLayer());
 	}
 
 	~Sandbox()

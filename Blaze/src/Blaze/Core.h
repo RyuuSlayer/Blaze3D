@@ -1,11 +1,15 @@
 #pragma once
 
 #ifdef BZ_PLATFORM_WINDOWS
+#if BZ_DYNAMIC_LINK
 	#ifdef BZ_BUILD_DLL
 		#define BLAZE_API __declspec(dllexport)
 	#else
 		#define BLAZE_API __declspec(dllimport)
 	#endif
+#else
+	#define BLAZE_API
+#endif
 #else
 	#error Blaze only supports Windows!
 #endif

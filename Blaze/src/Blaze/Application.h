@@ -7,6 +7,8 @@
 #include "Blaze/Events/Event.h"
 #include "Blaze/Events/ApplicationEvent.h"
 
+#include "Blaze/ImGui/ImGuiLayer.h"
+
 namespace Blaze {
 
 	class BLAZE_API Application
@@ -29,6 +31,7 @@ namespace Blaze {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

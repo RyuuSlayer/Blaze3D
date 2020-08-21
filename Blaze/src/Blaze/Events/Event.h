@@ -1,6 +1,6 @@
 #pragma once
-
 #include "bzpch.h"
+
 #include "Blaze/Core/Core.h"
 
 namespace Blaze {
@@ -35,7 +35,7 @@ namespace Blaze {
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
 
-	class BLAZE_API Event
+	class Event
 	{
 	public:
 		bool Handled = false;

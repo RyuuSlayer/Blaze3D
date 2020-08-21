@@ -1,10 +1,8 @@
 #include "bzpch.h"
-#include "RenderCommand.h"
-
-#include "Platform/OpenGL/OpenGLRendererAPI.h"
+#include "Blaze/Renderer/RenderCommand.h"
 
 namespace Blaze {
 
-	Scope<RendererAPI> RenderCommand::s_RendererAPI = CreateScope<OpenGLRendererAPI>();
+	Scope<RendererAPI> RenderCommand::s_RendererAPI = RendererAPI::Create();
 
 }

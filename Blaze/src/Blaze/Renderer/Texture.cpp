@@ -1,7 +1,7 @@
 #include "bzpch.h"
-#include "Texture.h"
+#include "Blaze/Renderer/Texture.h"
 
-#include "Renderer.h"
+#include "Blaze/Renderer/Renderer.h"
 #include "Platform/OpenGL/OpenGLTexture.h"
 
 namespace Blaze {

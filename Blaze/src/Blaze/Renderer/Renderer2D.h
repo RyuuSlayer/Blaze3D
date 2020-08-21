@@ -1,8 +1,8 @@
 #pragma once
 
-#include "OrthographicCamera.h"
+#include "Blaze/Renderer/OrthographicCamera.h"
 
-#include "Texture.h"
+#include "Blaze/Renderer/Texture.h"
 
 namespace Blaze {
 

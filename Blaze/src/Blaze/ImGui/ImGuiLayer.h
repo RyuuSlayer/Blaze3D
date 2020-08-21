@@ -8,7 +8,7 @@
 
 namespace Blaze {
 
-	class BLAZE_API ImGuiLayer : public Layer
+	class ImGuiLayer : public Layer
 	{
 	public:
 		ImGuiLayer();

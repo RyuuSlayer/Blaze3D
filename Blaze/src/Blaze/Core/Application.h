@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Core.h"
+#include "Blaze/Core/Core.h"
 
-#include "Window.h"
+#include "Blaze/Core/Window.h"
 #include "Blaze/Core/LayerStack.h"
 #include "Blaze/Events/Event.h"
 #include "Blaze/Events/ApplicationEvent.h"
@@ -17,7 +17,7 @@ namespace Blaze {
 	{
 	public:
 		Application();
-		virtual ~Application() = default;
+		virtual ~Application();
 
 		void Run();
 

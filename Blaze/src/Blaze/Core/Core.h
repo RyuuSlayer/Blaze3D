@@ -43,22 +43,6 @@
 	#error "Unknown platform!"
 #endif // End of platform detection
 
-
-// DLL support
-#ifdef BZ_PLATFORM_WINDOWS
-	#if BZ_DYNAMIC_LINK
-		#ifdef BZ_BUILD_DLL
-			#define BLAZE_API __declspec(dllexport)
-		#else
-			#define BLAZE_API __declspec(dllimport)
-		#endif
-	#else
-		#define BLAZE_API
-	#endif
-#else
-	#error Blaze only supports Windows!
-#endif // End of DLL support
-
 #ifdef BZ_DEBUG
 	#define BZ_ENABLE_ASSERTS
 #endif

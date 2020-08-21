@@ -1,11 +1,7 @@
 #include "bzpch.h"
-#include "LayerStack.h"
+#include "Blaze/Core/LayerStack.h"
 
 namespace Blaze {
-
-	LayerStack::LayerStack()
-	{
-	}
 
 	LayerStack::~LayerStack()
 	{

@@ -1415,6 +1415,9 @@
     <ClCompile Include="src\Blaze\Renderer\Buffer.cpp">
       <Filter>src\Blaze\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\Blaze\Renderer\GraphicsContext.cpp">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="src\Blaze\Renderer\OrthographicCamera.cpp">
       <Filter>src\Blaze\Renderer</Filter>
     </ClCompile>

@@ -1,4 +1,5 @@
 #pragma once
+#include "Blaze/Core/Core.h"
 
 #ifdef BZ_PLATFORM_WINDOWS
 

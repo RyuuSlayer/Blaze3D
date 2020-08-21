@@ -1,16 +1,16 @@
 #pragma once
 
 #include "Blaze/Core/Core.h"
-#include "Layer.h"
+#include "Blaze/Core/Layer.h"
 
 #include <vector>
 
 namespace Blaze {
 
-	class BLAZE_API LayerStack
+	class LayerStack
 	{
 	public:
-		LayerStack();
+		LayerStack() = default;
 		~LayerStack();
 
 		void PushLayer(Layer* layer);

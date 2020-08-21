@@ -1,9 +1,7 @@
 #include <Blaze.h>
 #include <Blaze/Core/EntryPoint.h>
 
-#include "Platform/OpenGL/OpenGLShader.h"
-
-#include "imgui/imgui.h"
+#include <imgui/imgui.h>
 
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -24,8 +22,7 @@ public:
 			 0.0f,  0.5f, 0.0f, 0.8f, 0.8f, 0.2f, 1.0f
 		};
 
-		Blaze::Ref<Blaze::VertexBuffer> vertexBuffer;
-		vertexBuffer.reset(Blaze::VertexBuffer::Create(vertices, sizeof(vertices)));
+		Blaze::Ref<Blaze::VertexBuffer> vertexBuffer = Blaze::VertexBuffer::Create(vertices, sizeof(vertices));
 		Blaze::BufferLayout layout = {
 			{ Blaze::ShaderDataType::Float3, "a_Position" },
 			{ Blaze::ShaderDataType::Float4, "a_Color" }
@@ -34,8 +31,7 @@ public:
 		m_VertexArray->AddVertexBuffer(vertexBuffer);
 
 		uint32_t indices[3] = { 0, 1, 2 };
-		Blaze::Ref<Blaze::IndexBuffer> indexBuffer;
-		indexBuffer.reset(Blaze::IndexBuffer::Create(indices, sizeof(indices) / sizeof(uint32_t)));
+		Blaze::Ref<Blaze::IndexBuffer> indexBuffer = Blaze::IndexBuffer::Create(indices, sizeof(indices) / sizeof(uint32_t));
 		m_VertexArray->SetIndexBuffer(indexBuffer);
 
 		m_SquareVA = Blaze::VertexArray::Create();
@@ -47,8 +43,7 @@ public:
 			-0.5f,  0.5f, 0.0f, 0.0f, 1.0f
 		};
 
-		Blaze::Ref<Blaze::VertexBuffer> squareVB;
-		squareVB.reset(Blaze::VertexBuffer::Create(squareVertices, sizeof(squareVertices)));
+		Blaze::Ref<Blaze::VertexBuffer> squareVB = Blaze::VertexBuffer::Create(squareVertices, sizeof(squareVertices));
 		squareVB->SetLayout({
 			{ Blaze::ShaderDataType::Float3, "a_Position" },
 			{ Blaze::ShaderDataType::Float2, "a_TexCoord" }
@@ -56,8 +51,7 @@ public:
 		m_SquareVA->AddVertexBuffer(squareVB);
 
 		uint32_t squareIndices[6] = { 0, 1, 2, 2, 3, 0 };
-		Blaze::Ref<Blaze::IndexBuffer> squareIB;
-		squareIB.reset(Blaze::IndexBuffer::Create(squareIndices, sizeof(squareIndices) / sizeof(uint32_t)));
+		Blaze::Ref<Blaze::IndexBuffer> squareIB = Blaze::IndexBuffer::Create(squareIndices, sizeof(squareIndices) / sizeof(uint32_t));
 		m_SquareVA->SetIndexBuffer(squareIB);
 
 		std::string vertexSrc = R"(
@@ -126,8 +120,8 @@ public:
 		m_Texture = Blaze::Texture2D::Create("assets/textures/Checkerboard.png");
 		m_ChernoLogoTexture = Blaze::Texture2D::Create("assets/textures/ChernoLogo.png");
 
-		std::dynamic_pointer_cast<Blaze::OpenGLShader>(textureShader)->Bind();
-		std::dynamic_pointer_cast<Blaze::OpenGLShader>(textureShader)->UploadUniformInt("u_Texture", 0);
+		textureShader->Bind();
+		textureShader->SetInt("u_Texture", 0);
 	}
 
 	void OnUpdate(Blaze::Timestep ts) override
@@ -143,8 +137,8 @@ public:
 
 		glm::mat4 scale = glm::scale(glm::mat4(1.0f), glm::vec3(0.1f));
 
-		std::dynamic_pointer_cast<Blaze::OpenGLShader>(m_FlatColorShader)->Bind();
-		std::dynamic_pointer_cast<Blaze::OpenGLShader>(m_FlatColorShader)->UploadUniformFloat3("u_Color", m_SquareColor);
+		m_FlatColorShader->Bind();
+		m_FlatColorShader->SetFloat3("u_Color", m_SquareColor);
 
 		for (int y = 0; y < 20; y++)
 		{

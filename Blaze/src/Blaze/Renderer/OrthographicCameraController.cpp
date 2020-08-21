@@ -1,5 +1,5 @@
 #include "bzpch.h"
-#include "OrthographicCameraController.h"
+#include "Blaze/Renderer/OrthographicCameraController.h"
 
 #include "Blaze/Core/Input.h"
 #include "Blaze/Core/KeyCodes.h"

@@ -3,7 +3,7 @@
 #include "Core.h"
 
 #include "Window.h"
-#include "Blaze/LayerStack.h"
+#include "Blaze/Core/LayerStack.h"
 #include "Blaze/Events/Event.h"
 #include "Blaze/Events/ApplicationEvent.h"
 

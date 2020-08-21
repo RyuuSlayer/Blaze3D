@@ -2,16 +2,16 @@
 
 // For use by Blaze applications
 
-#include "Blaze/Application.h"
-#include "Blaze/Layer.h"
-#include "Blaze/Log.h"
+#include "Blaze/Core/Application.h"
+#include "Blaze/Core/Layer.h"
+#include "Blaze/Core/Log.h"
 
 #include "Blaze/Core/Timestep.h"
 
-#include "Blaze/Input.h"
-#include "Blaze/KeyCodes.h"
-#include "Blaze/MouseButtonCodes.h"
-#include "Blaze/OrthographicCameraController.h"
+#include "Blaze/Core/Input.h"
+#include "Blaze/Core/KeyCodes.h"
+#include "Blaze/Core/MouseButtonCodes.h"
+#include "Blaze/Renderer/OrthographicCameraController.h"
 
 #include "Blaze/ImGui/ImGuiLayer.h"
 
@@ -28,5 +28,5 @@
 // -----------------------------------
 
 // ---Entry Point----------------------
-#include "Blaze/EntryPoint.h"
+#include "Blaze/Core/EntryPoint.h"
 // ------------------------------------

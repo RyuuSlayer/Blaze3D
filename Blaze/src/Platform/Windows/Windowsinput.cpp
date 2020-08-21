@@ -1,7 +1,7 @@
 #include "bzpch.h"
 #include "WindowsInput.h"
 
-#include "Blaze/Application.h"
+#include "Blaze/Core/Application.h"
 #include <GLFW/glfw3.h>
 
 namespace Blaze {

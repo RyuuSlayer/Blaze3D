@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Blaze/Window.h"
+#include "Blaze/Core/Window.h"
 #include "Blaze/Renderer/GraphicsContext.h"
 
 #include <GLFW/glfw3.h>

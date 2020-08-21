@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Blaze/Core.h"
+#include "Blaze/Core/Core.h"
 #include "Blaze/Core/Timestep.h"
 #include "Blaze/Events/Event.h"
 

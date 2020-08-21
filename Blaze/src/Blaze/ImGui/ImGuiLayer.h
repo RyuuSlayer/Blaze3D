@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Blaze/Layer.h"
+#include "Blaze/Core/Layer.h"
 
 #include "Blaze/Events/ApplicationEvent.h"
 #include "Blaze/Events/KeyEvent.h"

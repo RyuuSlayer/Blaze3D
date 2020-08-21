@@ -1,7 +1,7 @@
 #include "bzpch.h"
 #include "Application.h"
 
-#include "Blaze/Log.h"
+#include "Blaze/Core/Log.h"
 
 #include "Blaze/Renderer/Renderer.h"
 

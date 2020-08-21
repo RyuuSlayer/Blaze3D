@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Blaze/Input.h"
+#include "Blaze/Core/Input.h"
 
 namespace Blaze {
 

@@ -13,7 +13,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-#include "Blaze/Log.h"
+#include "Blaze/Core/Log.h"
 
 #ifdef BZ_PLATFORM_WINDOWS
 #include <Windows.h>

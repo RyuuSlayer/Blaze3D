@@ -144,33 +144,33 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Blaze\OrthographicCameraController.h" />
     <ClInclude Include="src\Blaze.h" />
-    <ClInclude Include="src\Blaze\Application.h" />
-    <ClInclude Include="src\Blaze\Core.h" />
+    <ClInclude Include="src\Blaze\Core\Application.h" />
+    <ClInclude Include="src\Blaze\Core\Core.h" />
+    <ClInclude Include="src\Blaze\Core\EntryPoint.h" />
+    <ClInclude Include="src\Blaze\Core\Input.h" />
+    <ClInclude Include="src\Blaze\Core\KeyCodes.h" />
+    <ClInclude Include="src\Blaze\Core\Layer.h" />
+    <ClInclude Include="src\Blaze\Core\LayerStack.h" />
+    <ClInclude Include="src\Blaze\Core\Log.h" />
+    <ClInclude Include="src\Blaze\Core\MouseButtonCodes.h" />
     <ClInclude Include="src\Blaze\Core\Timestep.h" />
-    <ClInclude Include="src\Blaze\EntryPoint.h" />
+    <ClInclude Include="src\Blaze\Core\Window.h" />
     <ClInclude Include="src\Blaze\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Blaze\Events\Event.h" />
     <ClInclude Include="src\Blaze\Events\KeyEvent.h" />
     <ClInclude Include="src\Blaze\Events\MouseEvent.h" />
     <ClInclude Include="src\Blaze\ImGui\ImGuiLayer.h" />
-    <ClInclude Include="src\Blaze\Input.h" />
-    <ClInclude Include="src\Blaze\KeyCodes.h" />
-    <ClInclude Include="src\Blaze\Layer.h" />
-    <ClInclude Include="src\Blaze\LayerStack.h" />
-    <ClInclude Include="src\Blaze\Log.h" />
-    <ClInclude Include="src\Blaze\MouseButtonCodes.h" />
     <ClInclude Include="src\Blaze\Renderer\Buffer.h" />
     <ClInclude Include="src\Blaze\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Blaze\Renderer\OrthographicCamera.h" />
+    <ClInclude Include="src\Blaze\Renderer\OrthographicCameraController.h" />
     <ClInclude Include="src\Blaze\Renderer\RenderCommand.h" />
     <ClInclude Include="src\Blaze\Renderer\Renderer.h" />
     <ClInclude Include="src\Blaze\Renderer\RendererAPI.h" />
     <ClInclude Include="src\Blaze\Renderer\Shader.h" />
     <ClInclude Include="src\Blaze\Renderer\Texture.h" />
     <ClInclude Include="src\Blaze\Renderer\VertexArray.h" />
-    <ClInclude Include="src\Blaze\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
@@ -591,15 +591,15 @@
     <ClInclude Include="vendor\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Blaze\OrthographicCameraController.cpp" />
-    <ClCompile Include="src\Blaze\Application.cpp" />
+    <ClCompile Include="src\Blaze\Core\Application.cpp" />
+    <ClCompile Include="src\Blaze\Core\Layer.cpp" />
+    <ClCompile Include="src\Blaze\Core\LayerStack.cpp" />
+    <ClCompile Include="src\Blaze\Core\Log.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiLayer.cpp" />
-    <ClCompile Include="src\Blaze\Layer.cpp" />
-    <ClCompile Include="src\Blaze\LayerStack.cpp" />
-    <ClCompile Include="src\Blaze\Log.cpp" />
     <ClCompile Include="src\Blaze\Renderer\Buffer.cpp" />
     <ClCompile Include="src\Blaze\Renderer\OrthographicCamera.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\OrthographicCameraController.cpp" />
     <ClCompile Include="src\Blaze\Renderer\RenderCommand.cpp" />
     <ClCompile Include="src\Blaze\Renderer\Renderer.cpp" />
     <ClCompile Include="src\Blaze\Renderer\RendererAPI.cpp" />

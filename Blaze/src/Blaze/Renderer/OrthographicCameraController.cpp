@@ -1,8 +1,8 @@
 #include "bzpch.h"
 #include "OrthographicCameraController.h"
 
-#include "Blaze/Input.h"
-#include "Blaze/KeyCodes.h"
+#include "Blaze/Core/Input.h"
+#include "Blaze/Core/KeyCodes.h"
 
 namespace Blaze {
 

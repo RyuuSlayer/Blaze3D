@@ -123,6 +123,9 @@
     <ClInclude Include="src\Blaze\Renderer\Renderer.h">
       <Filter>src\Blaze\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Renderer\Renderer2D.h">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Renderer\RendererAPI.h">
       <Filter>src\Blaze\Renderer</Filter>
     </ClInclude>
@@ -1422,6 +1425,9 @@
       <Filter>src\Blaze\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Renderer\Renderer.cpp">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\Renderer\Renderer2D.cpp">
       <Filter>src\Blaze\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Renderer\RendererAPI.cpp">

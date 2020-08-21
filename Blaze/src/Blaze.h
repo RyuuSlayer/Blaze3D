@@ -17,6 +17,7 @@
 
 // ---Renderer------------------------
 #include "Blaze/Renderer/Renderer.h"
+#include "Blaze/Renderer/Renderer2D.h"
 #include "Blaze/Renderer/RenderCommand.h"
 
 #include "Blaze/Renderer/Buffer.h"

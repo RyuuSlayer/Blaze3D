@@ -15,14 +15,13 @@ public:
 	{
 		m_VertexArray.reset(Blaze::VertexArray::Create());
 
-		float vertices[3 * 4] = {
-			-0.5f, -0.5f, 0.0f,
-			 0.5f, -0.5f, 0.0f,
-			 0.5f,  0.5f, 0.0f,
-			-0.5f,  0.5f, 0.0f
+		float vertices[3 * 7] = {
+			-0.5f, -0.5f, 0.0f, 0.8f, 0.2f, 0.8f, 1.0f,
+			 0.5f, -0.5f, 0.0f, 0.2f, 0.3f, 0.8f, 1.0f,
+			 0.0f,  0.5f, 0.0f, 0.8f, 0.8f, 0.2f, 1.0f
 		};
 
-		std::shared_ptr<Blaze::VertexBuffer> vertexBuffer;
+		Blaze::Ref<Blaze::VertexBuffer> vertexBuffer;
 		vertexBuffer.reset(Blaze::VertexBuffer::Create(vertices, sizeof(vertices)));
 		Blaze::BufferLayout layout = {
 			{ Blaze::ShaderDataType::Float3, "a_Position" },
@@ -32,28 +31,29 @@ public:
 		m_VertexArray->AddVertexBuffer(vertexBuffer);
 
 		uint32_t indices[3] = { 0, 1, 2 };
-		std::shared_ptr<Blaze::IndexBuffer> indexBuffer;
+		Blaze::Ref<Blaze::IndexBuffer> indexBuffer;
 		indexBuffer.reset(Blaze::IndexBuffer::Create(indices, sizeof(indices) / sizeof(uint32_t)));
 		m_VertexArray->SetIndexBuffer(indexBuffer);
 
 		m_SquareVA.reset(Blaze::VertexArray::Create());
 
-		float squareVertices[3 * 4] = {
-			-0.75f, -0.75f, 0.0f,
-			 0.75f, -0.75f, 0.0f,
-			 0.75f,  0.75f, 0.0f,
-			-0.75f,  0.75f, 0.0f
+		float squareVertices[5 * 4] = {
+			-0.5f, -0.5f, 0.0f, 0.0f, 0.0f,
+			 0.5f, -0.5f, 0.0f, 1.0f, 0.0f,
+			 0.5f,  0.5f, 0.0f, 1.0f, 1.0f,
+			-0.5f,  0.5f, 0.0f, 0.0f, 1.0f
 		};
 
-		std::shared_ptr<Blaze::VertexBuffer> squareVB;
+		Blaze::Ref<Blaze::VertexBuffer> squareVB;
 		squareVB.reset(Blaze::VertexBuffer::Create(squareVertices, sizeof(squareVertices)));
 		squareVB->SetLayout({
-			{ Blaze::ShaderDataType::Float3, "a_Position" }
+			{ Blaze::ShaderDataType::Float3, "a_Position" },
+			{ Blaze::ShaderDataType::Float2, "a_TexCoord" }
 			});
 		m_SquareVA->AddVertexBuffer(squareVB);
 
 		uint32_t squareIndices[6] = { 0, 1, 2, 2, 3, 0 };
-		std::shared_ptr<Blaze::IndexBuffer> squareIB;
+		Blaze::Ref<Blaze::IndexBuffer> squareIB;
 		squareIB.reset(Blaze::IndexBuffer::Create(squareIndices, sizeof(squareIndices) / sizeof(uint32_t)));
 		m_SquareVA->SetIndexBuffer(squareIB);
 
@@ -62,18 +62,15 @@ public:
 			
 			layout(location = 0) in vec3 a_Position;
 			layout(location = 1) in vec4 a_Color;
-
 			uniform mat4 u_ViewProjection;
 			uniform mat4 u_Transform;
-
 			out vec3 v_Position;
 			out vec4 v_Color;
-
 			void main()
 			{
 				v_Position = a_Position;
 				v_Color = a_Color;
-				gl_Position = u_ViewProjection * u_Transform * vec4(a_Position, 1.0);
+				gl_Position = u_ViewProjection * u_Transform * vec4(a_Position, 1.0);	
 			}
 		)";
 
@@ -81,10 +78,8 @@ public:
 			#version 330 core
 			
 			layout(location = 0) out vec4 color;
-
 			in vec3 v_Position;
 			in vec4 v_Color;
-
 			void main()
 			{
 				color = vec4(v_Position * 0.5 + 0.5, 1.0);
@@ -98,16 +93,13 @@ public:
 			#version 330 core
 			
 			layout(location = 0) in vec3 a_Position;
-
 			uniform mat4 u_ViewProjection;
 			uniform mat4 u_Transform;
-
 			out vec3 v_Position;
-
 			void main()
 			{
 				v_Position = a_Position;
-				gl_Position = u_ViewProjection * u_Transform * vec4(a_Position, 1.0);
+				gl_Position = u_ViewProjection * u_Transform * vec4(a_Position, 1.0);	
 			}
 		)";
 
@@ -115,11 +107,9 @@ public:
 			#version 330 core
 			
 			layout(location = 0) out vec4 color;
-
 			in vec3 v_Position;
-
+			
 			uniform vec3 u_Color;
-
 			void main()
 			{
 				color = vec4(u_Color, 1.0);
@@ -127,6 +117,41 @@ public:
 		)";
 
 		m_FlatColorShader.reset(Blaze::Shader::Create(flatColorShaderVertexSrc, flatColorShaderFragmentSrc));
+
+		std::string textureShaderVertexSrc = R"(
+			#version 330 core
+			
+			layout(location = 0) in vec3 a_Position;
+			layout(location = 1) in vec2 a_TexCoord;
+			uniform mat4 u_ViewProjection;
+			uniform mat4 u_Transform;
+			out vec2 v_TexCoord;
+			void main()
+			{
+				v_TexCoord = a_TexCoord;
+				gl_Position = u_ViewProjection * u_Transform * vec4(a_Position, 1.0);	
+			}
+		)";
+
+		std::string textureShaderFragmentSrc = R"(
+			#version 330 core
+			
+			layout(location = 0) out vec4 color;
+			in vec2 v_TexCoord;
+			
+			uniform sampler2D u_Texture;
+			void main()
+			{
+				color = texture(u_Texture, v_TexCoord);
+			}
+		)";
+
+		m_TextureShader.reset(Blaze::Shader::Create(textureShaderVertexSrc, textureShaderFragmentSrc));
+
+		m_Texture = Blaze::Texture2D::Create("assets/textures/Checkerboard.png");
+
+		std::dynamic_pointer_cast<Blaze::OpenGLShader>(m_TextureShader)->Bind();
+		std::dynamic_pointer_cast<Blaze::OpenGLShader>(m_TextureShader)->UploadUniformInt("u_Texture", 0);
 	}
 
 	void OnUpdate(Blaze::Timestep ts) override
@@ -169,7 +194,11 @@ public:
 			}
 		}
 
-		Blaze::Renderer::Submit(m_Shader, m_VertexArray);
+		m_Texture->Bind();
+		Blaze::Renderer::Submit(m_TextureShader, m_SquareVA, glm::scale(glm::mat4(1.0f), glm::vec3(1.5f)));
+
+		// Triangle
+		// Blaze::Renderer::Submit(m_Shader, m_VertexArray);
 
 		Blaze::Renderer::EndScene();
 	}
@@ -184,22 +213,23 @@ public:
 	void OnEvent(Blaze::Event& event) override
 	{
 	}
+private:
+	Blaze::Ref<Blaze::Shader> m_Shader;
+	Blaze::Ref<Blaze::VertexArray> m_VertexArray;
 
-	private:
-		std::shared_ptr<Blaze::Shader> m_Shader;
-		std::shared_ptr<Blaze::VertexArray> m_VertexArray;
+	Blaze::Ref<Blaze::Shader> m_FlatColorShader, m_TextureShader;
+	Blaze::Ref<Blaze::VertexArray> m_SquareVA;
 
-		std::shared_ptr<Blaze::Shader> m_FlatColorShader;
-		std::shared_ptr<Blaze::VertexArray> m_SquareVA;
+	Blaze::Ref<Blaze::Texture2D> m_Texture;
 
-		Blaze::OrthographicCamera m_Camera;
-		glm::vec3 m_CameraPosition;
-		float m_CameraMoveSpeed = 5.0f;
+	Blaze::OrthographicCamera m_Camera;
+	glm::vec3 m_CameraPosition;
+	float m_CameraMoveSpeed = 5.0f;
 
-		float m_CameraRotation = 0.0f;
-		float m_CameraRotationSpeed = 180.0f;
+	float m_CameraRotation = 0.0f;
+	float m_CameraRotationSpeed = 180.0f;
 
-		glm::vec3 m_SquareColor = { 0.2f, 0.3f, 0.8f };
+	glm::vec3 m_SquareColor = { 0.2f, 0.3f, 0.8f };
 };
 
 class Sandbox : public Blaze::Application

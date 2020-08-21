@@ -20,6 +20,7 @@
 
 #include "Blaze/Renderer/Buffer.h"
 #include "Blaze/Renderer/Shader.h"
+#include "Blaze/Renderer/Texture.h"
 #include "Blaze/Renderer/VertexArray.h"
 
 #include "Blaze/Renderer/OrthographicCamera.h"

@@ -8,9 +8,4 @@ namespace Blaze {
 	{
 	}
 
-	Layer::~Layer()
-	{
-
-	}
-
 }

@@ -144,6 +144,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Blaze\OrthographicCameraController.h" />
     <ClInclude Include="src\Blaze.h" />
     <ClInclude Include="src\Blaze\Application.h" />
     <ClInclude Include="src\Blaze\Core.h" />
@@ -590,6 +591,7 @@
     <ClInclude Include="vendor\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Blaze\OrthographicCameraController.cpp" />
     <ClCompile Include="src\Blaze\Application.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiLayer.cpp" />

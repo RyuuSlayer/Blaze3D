@@ -11,6 +11,7 @@
 #include "Blaze/Input.h"
 #include "Blaze/KeyCodes.h"
 #include "Blaze/MouseButtonCodes.h"
+#include "Blaze/OrthographicCameraController.h"
 
 #include "Blaze/ImGui/ImGuiLayer.h"
 

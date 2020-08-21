@@ -140,6 +140,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Blaze\Core\Timestep.h" />
     <ClInclude Include="src\Blaze\Renderer\OrthographicCamera.h" />
     <ClInclude Include="src\Blaze.h" />
     <ClInclude Include="src\Blaze\Application.h" />

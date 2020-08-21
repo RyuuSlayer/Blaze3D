@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Blaze/Core.h"
+#include "Blaze/Core/Timestep.h"
 #include "Blaze/Events/Event.h"
 
 namespace Blaze {
@@ -13,7 +14,7 @@ namespace Blaze {
 
 		virtual void OnAttach() {}
 		virtual void OnDetach() {}
-		virtual void OnUpdate() {}
+		virtual void OnUpdate(Timestep ts) {}
 		virtual void OnImGuiRender() {}
 		virtual void OnEvent(Event& event) {}
 

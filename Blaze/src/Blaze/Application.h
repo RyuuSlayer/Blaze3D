@@ -7,17 +7,13 @@
 #include "Blaze/Events/Event.h"
 #include "Blaze/Events/ApplicationEvent.h"
 
+#include "Blaze/Core/Timestep.h"
+
 #include "Blaze/ImGui/ImGuiLayer.h"
-
-#include "Blaze/Renderer/Shader.h"
-#include "Blaze/Renderer/Buffer.h"
-#include "Blaze/Renderer/VertexArray.h"
-
-#include "Blaze/Renderer/OrthographicCamera.h"
 
 namespace Blaze {
 
-	class BLAZE_API Application
+	class Application
 	{
 	public:
 		Application();
@@ -36,18 +32,13 @@ namespace Blaze {
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 
+	private:
 		std::unique_ptr<Window> m_Window;
 		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 
-		std::shared_ptr<Shader> m_Shader;
-		std::shared_ptr<VertexArray> m_VertexArray;
-
-		std::shared_ptr<Shader> m_BlueShader;
-		std::shared_ptr<VertexArray> m_SquareVA;
-
-		OrthographicCamera m_Camera;
+		float m_LastFrameTime = 0.0f;
 	private:
 		static Application* s_Instance;
 	};

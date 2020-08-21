@@ -1363,6 +1363,7 @@
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
     <ClInclude Include="src\Blaze\Renderer\OrthographicCamera.h" />
+    <ClInclude Include="src\Blaze\Core\Timestep.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Application.cpp">

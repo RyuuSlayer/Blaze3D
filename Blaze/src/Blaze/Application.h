@@ -13,6 +13,8 @@
 #include "Blaze/Renderer/Buffer.h"
 #include "Blaze/Renderer/VertexArray.h"
 
+#include "Blaze/Renderer/OrthographicCamera.h"
+
 namespace Blaze {
 
 	class BLAZE_API Application
@@ -44,6 +46,8 @@ namespace Blaze {
 
 		std::shared_ptr<Shader> m_BlueShader;
 		std::shared_ptr<VertexArray> m_SquareVA;
+
+		OrthographicCamera m_Camera;
 	private:
 		static Application* s_Instance;
 	};

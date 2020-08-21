@@ -140,13 +140,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
-    <ClInclude Include="src\Blaze\Renderer\RendererAPI.h" />
-    <ClInclude Include="src\Blaze\Renderer\RenderCommand.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
-    <ClInclude Include="src\Blaze\Renderer\Renderer.h" />
-    <ClInclude Include="src\Blaze\Renderer\Buffer.h" />
+    <ClInclude Include="src\Blaze\Renderer\OrthographicCamera.h" />
     <ClInclude Include="src\Blaze.h" />
     <ClInclude Include="src\Blaze\Application.h" />
     <ClInclude Include="src\Blaze\Core.h" />
@@ -162,10 +156,18 @@
     <ClInclude Include="src\Blaze\LayerStack.h" />
     <ClInclude Include="src\Blaze\Log.h" />
     <ClInclude Include="src\Blaze\MouseButtonCodes.h" />
+    <ClInclude Include="src\Blaze\Renderer\Buffer.h" />
     <ClInclude Include="src\Blaze\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Blaze\Renderer\RenderCommand.h" />
+    <ClInclude Include="src\Blaze\Renderer\Renderer.h" />
+    <ClInclude Include="src\Blaze\Renderer\RendererAPI.h" />
     <ClInclude Include="src\Blaze\Renderer\Shader.h" />
+    <ClInclude Include="src\Blaze\Renderer\VertexArray.h" />
     <ClInclude Include="src\Blaze\Window.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Platform\Windows\Windowsinput.h" />
     <ClInclude Include="src\bzpch.h" />
@@ -577,30 +579,30 @@
     <ClInclude Include="vendor\glm\glm\vec3.hpp" />
     <ClInclude Include="vendor\glm\glm\vec4.hpp" />
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp" />
-    <ClInclude Include="src\Blaze\Renderer\VertexArray.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
-    <ClCompile Include="src\Blaze\Renderer\RendererAPI.cpp" />
-    <ClCompile Include="src\Blaze\Renderer\RenderCommand.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
-    <ClCompile Include="src\Blaze\Renderer\Renderer.cpp" />
-    <ClCompile Include="src\Blaze\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\OrthographicCamera.cpp" />
     <ClCompile Include="src\Blaze\Application.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Blaze\Layer.cpp" />
     <ClCompile Include="src\Blaze\LayerStack.cpp" />
     <ClCompile Include="src\Blaze\Log.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\RenderCommand.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\RendererAPI.cpp" />
     <ClCompile Include="src\Blaze\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\VertexArray.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Platform\Windows\Windowsinput.cpp" />
     <ClCompile Include="src\bzpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\Blaze\Renderer\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">

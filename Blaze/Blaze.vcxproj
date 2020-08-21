@@ -140,6 +140,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h" />
     <ClInclude Include="src\Blaze\Core\Timestep.h" />
     <ClInclude Include="src\Blaze\Renderer\OrthographicCamera.h" />
     <ClInclude Include="src\Blaze.h" />
@@ -582,6 +583,7 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp" />
     <ClCompile Include="src\Blaze\Renderer\OrthographicCamera.cpp" />
     <ClCompile Include="src\Blaze\Application.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiBuild.cpp" />

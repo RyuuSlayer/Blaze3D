@@ -1364,6 +1364,7 @@
     </ClInclude>
     <ClInclude Include="src\Blaze\Renderer\OrthographicCamera.h" />
     <ClInclude Include="src\Blaze\Core\Timestep.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Application.cpp">
@@ -1424,5 +1425,6 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Renderer\OrthographicCamera.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp" />
   </ItemGroup>
 </Project>

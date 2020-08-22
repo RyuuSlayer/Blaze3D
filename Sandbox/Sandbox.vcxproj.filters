@@ -21,9 +21,15 @@
     <ClCompile Include="src\Sandbox2D.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="src\ExampleLayer.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Sandbox2D.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ExampleLayer.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

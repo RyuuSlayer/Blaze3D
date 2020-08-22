@@ -12,7 +12,7 @@
 
 #include "Blaze/Core/Input.h"
 #include "Blaze/Core/KeyCodes.h"
-#include "Blaze/Core/MouseButtonCodes.h"
+#include "Blaze/Core/MouseCodes.h"
 #include "Blaze/Renderer/OrthographicCameraController.h"
 
 #include "Blaze/ImGui/ImGuiLayer.h"

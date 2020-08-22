@@ -8,6 +8,8 @@ namespace Blaze {
 
 	void Renderer::Init()
 	{
+		BZ_PROFILE_FUNCTION();
+
 		RenderCommand::Init();
 		Renderer2D::Init();
 	}

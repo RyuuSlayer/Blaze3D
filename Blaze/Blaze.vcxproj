@@ -153,7 +153,7 @@
     <ClInclude Include="src\Blaze\Core\Layer.h" />
     <ClInclude Include="src\Blaze\Core\LayerStack.h" />
     <ClInclude Include="src\Blaze\Core\Log.h" />
-    <ClInclude Include="src\Blaze\Core\MouseButtonCodes.h" />
+    <ClInclude Include="src\Blaze\Core\MouseCodes.h" />
     <ClInclude Include="src\Blaze\Core\Timestep.h" />
     <ClInclude Include="src\Blaze\Core\Window.h" />
     <ClInclude Include="src\Blaze\Debug\Instrumentor.h" />
@@ -594,9 +594,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Core\Application.cpp" />
+    <ClCompile Include="src\Blaze\Core\Input.cpp" />
     <ClCompile Include="src\Blaze\Core\Layer.cpp" />
     <ClCompile Include="src\Blaze\Core\LayerStack.cpp" />
     <ClCompile Include="src\Blaze\Core\Log.cpp" />
+    <ClCompile Include="src\Blaze\Core\Window.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Blaze\Renderer\Buffer.cpp" />

@@ -48,7 +48,7 @@ namespace Blaze {
 		{
 			BZ_PROFILE_SCOPE("glfwInit");
 			int success = glfwInit();
-			BZ_CORE_ASSERT(success, "Could not intialize GLFW!");
+			BZ_CORE_ASSERT(success, "Could not initialize GLFW!");
 			glfwSetErrorCallback(GLFWErrorCallback);
 		}
 

@@ -156,6 +156,7 @@
     <ClInclude Include="src\Blaze\Core\MouseButtonCodes.h" />
     <ClInclude Include="src\Blaze\Core\Timestep.h" />
     <ClInclude Include="src\Blaze\Core\Window.h" />
+    <ClInclude Include="src\Blaze\Debug\Instrumentor.h" />
     <ClInclude Include="src\Blaze\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Blaze\Events\Event.h" />
     <ClInclude Include="src\Blaze\Events\KeyEvent.h" />
@@ -636,4 +637,4 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-</Project> 
+</Project>

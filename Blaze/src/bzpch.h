@@ -15,6 +15,8 @@
 
 #include "Blaze/Core/Log.h"
 
+#include "Blaze/Debug/Instrumentor.h"
+
 #ifdef BZ_PLATFORM_WINDOWS
 #include <Windows.h>
 #endif 

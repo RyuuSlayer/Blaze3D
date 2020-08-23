@@ -144,6 +144,8 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebuffer.h" />
+    <ClInclude Include="src\Blaze\Renderer\Framebuffer.h" />
     <ClInclude Include="src\Blaze.h" />
     <ClInclude Include="src\Blaze\Core\Application.h" />
     <ClInclude Include="src\Blaze\Core\Base.h" />
@@ -593,6 +595,8 @@
     <ClInclude Include="vendor\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLFramebuffer.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\Framebuffer.cpp" />
     <ClCompile Include="src\Blaze\Core\Application.cpp" />
     <ClCompile Include="src\Blaze\Core\Input.cpp" />
     <ClCompile Include="src\Blaze\Core\Layer.cpp" />

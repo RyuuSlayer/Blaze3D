@@ -20,6 +20,7 @@ private:
 	// Temp
 	Blaze::Ref<Blaze::VertexArray> m_SquareVA;
 	Blaze::Ref<Blaze::Shader> m_FlatColorShader;
+	Blaze::Ref<Blaze::Framebuffer> m_Framebuffer;
 
 	Blaze::Ref<Blaze::Texture2D> m_CheckerboardTexture;
 

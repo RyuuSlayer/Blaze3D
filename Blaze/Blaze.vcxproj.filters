@@ -1393,6 +1393,8 @@
     <ClInclude Include="src\Blaze\Core\Base.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Renderer\Framebuffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebuffer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Core\Application.cpp">
@@ -1478,5 +1480,7 @@
     </ClCompile>
     <ClCompile Include="src\Blaze\Core\Input.cpp" />
     <ClCompile Include="src\Blaze\Core\Window.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\Framebuffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLFramebuffer.cpp" />
   </ItemGroup>
 </Project>

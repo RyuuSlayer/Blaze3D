@@ -76,7 +76,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>bzpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BZ_BUILD_DLL;GLFW_INCLUDE_NONE;BZ_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;BZ_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -98,7 +98,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>bzpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BZ_BUILD_DLL;GLFW_INCLUDE_NONE;BZ_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;BZ_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -123,7 +123,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>bzpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BZ_BUILD_DLL;GLFW_INCLUDE_NONE;BZ_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;BZ_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -144,8 +144,6 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebuffer.h" />
-    <ClInclude Include="src\Blaze\Renderer\Framebuffer.h" />
     <ClInclude Include="src\Blaze.h" />
     <ClInclude Include="src\Blaze\Core\Application.h" />
     <ClInclude Include="src\Blaze\Core\Base.h" />
@@ -165,6 +163,7 @@
     <ClInclude Include="src\Blaze\Events\MouseEvent.h" />
     <ClInclude Include="src\Blaze\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Blaze\Renderer\Buffer.h" />
+    <ClInclude Include="src\Blaze\Renderer\Framebuffer.h" />
     <ClInclude Include="src\Blaze\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Blaze\Renderer\OrthographicCamera.h" />
     <ClInclude Include="src\Blaze\Renderer\OrthographicCameraController.h" />
@@ -177,6 +176,7 @@
     <ClInclude Include="src\Blaze\Renderer\VertexArray.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebuffer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLTexture.h" />
@@ -595,8 +595,6 @@
     <ClInclude Include="vendor\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLFramebuffer.cpp" />
-    <ClCompile Include="src\Blaze\Renderer\Framebuffer.cpp" />
     <ClCompile Include="src\Blaze\Core\Application.cpp" />
     <ClCompile Include="src\Blaze\Core\Input.cpp" />
     <ClCompile Include="src\Blaze\Core\Layer.cpp" />
@@ -606,6 +604,7 @@
     <ClCompile Include="src\Blaze\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Blaze\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Blaze\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\Framebuffer.cpp" />
     <ClCompile Include="src\Blaze\Renderer\GraphicsContext.cpp" />
     <ClCompile Include="src\Blaze\Renderer\OrthographicCamera.cpp" />
     <ClCompile Include="src\Blaze\Renderer\OrthographicCameraController.cpp" />
@@ -618,6 +617,7 @@
     <ClCompile Include="src\Blaze\Renderer\VertexArray.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLFramebuffer.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLTexture.cpp" />

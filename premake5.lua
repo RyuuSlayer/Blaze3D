@@ -1,6 +1,6 @@
 workspace "Blaze"
 	architecture "x86_64"
-	startproject "Sandbox"
+	startproject "Blaze-Editor"
 
 	configurations
 	{
@@ -103,6 +103,53 @@ project "Blaze"
 
 project "Sandbox"
 	location "Sandbox"
+	kind "ConsoleApp"
+	language "C++"
+	cppdialect "C++17"
+	staticruntime "on"
+
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	files
+	{
+		"%{prj.name}/src/**.h",
+		"%{prj.name}/src/**.cpp"
+	}
+
+	includedirs
+	{
+		"Blaze/vendor/spdlog/include",
+		"Blaze/src",
+		"Blaze/vendor",
+		"%{IncludeDir.glm}"
+	}
+
+	links
+	{
+		"Blaze"
+	}
+
+	filter "system:windows"
+		systemversion "latest"
+
+	filter "configurations:Debug"
+		defines "BZ_DEBUG"
+		runtime "Debug"
+		symbols "on"
+
+	filter "configurations:Release"
+		defines "BZ_RELEASE"
+		runtime "Release"
+		optimize "on"
+
+	filter "configurations:Dist"
+		defines "BZ_DIST"
+		runtime "Release"
+		optimize "on"
+
+project "Blaze-Editor"
+	location "Blaze-Editor"
 	kind "ConsoleApp"
 	language "C++"
 	cppdialect "C++17"

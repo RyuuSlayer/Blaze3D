@@ -10,6 +10,9 @@
     <Filter Include="src\Blaze\Core">
       <UniqueIdentifier>{025C32BF-EE29-26C5-D7BD-96EBC32A022A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Blaze\Debug">
+      <UniqueIdentifier>{60378AA5-CCC2-F769-D5D3-7A5E41DE536A}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Blaze\Events">
       <UniqueIdentifier>{0E765B5A-FA6E-7AAC-23A1-5F310FF959B8}</UniqueIdentifier>
     </Filter>
@@ -60,6 +63,9 @@
     <ClInclude Include="src\Blaze\Core\Application.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Core\Base.h">
+      <Filter>src\Blaze\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Core\EntryPoint.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
@@ -78,11 +84,17 @@
     <ClInclude Include="src\Blaze\Core\Log.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Core\MouseCodes.h">
+      <Filter>src\Blaze\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Core\Timestep.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Blaze\Core\Window.h">
       <Filter>src\Blaze\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Debug\Instrumentor.h">
+      <Filter>src\Blaze\Debug</Filter>
     </ClInclude>
     <ClInclude Include="src\Blaze\Events\ApplicationEvent.h">
       <Filter>src\Blaze\Events</Filter>
@@ -100,6 +112,9 @@
       <Filter>src\Blaze\ImGui</Filter>
     </ClInclude>
     <ClInclude Include="src\Blaze\Renderer\Buffer.h">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Renderer\Framebuffer.h">
       <Filter>src\Blaze\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\Blaze\Renderer\GraphicsContext.h">
@@ -136,6 +151,9 @@
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebuffer.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h">
@@ -1386,18 +1404,12 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blaze\Debug\Instrumentor.h" />
-    <ClInclude Include="src\Blaze\Core\MouseCodes.h">
-      <Filter>src\Blaze\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Blaze\Core\Base.h">
-      <Filter>src\Blaze\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Blaze\Renderer\Framebuffer.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebuffer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Core\Application.cpp">
+      <Filter>src\Blaze\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\Core\Input.cpp">
       <Filter>src\Blaze\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Core\Layer.cpp">
@@ -1409,6 +1421,9 @@
     <ClCompile Include="src\Blaze\Core\Log.cpp">
       <Filter>src\Blaze\Core</Filter>
     </ClCompile>
+    <ClCompile Include="src\Blaze\Core\Window.cpp">
+      <Filter>src\Blaze\Core</Filter>
+    </ClCompile>
     <ClCompile Include="src\Blaze\ImGui\ImGuiBuild.cpp">
       <Filter>src\Blaze\ImGui</Filter>
     </ClCompile>
@@ -1416,6 +1431,9 @@
       <Filter>src\Blaze\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Renderer\Buffer.cpp">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\Renderer\Framebuffer.cpp">
       <Filter>src\Blaze\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Renderer\GraphicsContext.cpp">
@@ -1454,6 +1472,9 @@
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLFramebuffer.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
@@ -1478,9 +1499,5 @@
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="src\Blaze\Core\Input.cpp" />
-    <ClCompile Include="src\Blaze\Core\Window.cpp" />
-    <ClCompile Include="src\Blaze\Renderer\Framebuffer.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLFramebuffer.cpp" />
   </ItemGroup>
 </Project>

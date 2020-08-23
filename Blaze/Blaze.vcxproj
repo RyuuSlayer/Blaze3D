@@ -182,7 +182,6 @@
     <ClInclude Include="src\Platform\OpenGL\OpenGLTexture.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
-    <ClInclude Include="src\Platform\Windows\Windowsinput.h" />
     <ClInclude Include="src\bzpch.h" />
     <ClInclude Include="vendor\glm\glm\common.hpp" />
     <ClInclude Include="vendor\glm\glm\detail\_features.hpp" />
@@ -596,7 +595,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Core\Application.cpp" />
-    <ClCompile Include="src\Blaze\Core\Input.cpp" />
     <ClCompile Include="src\Blaze\Core\Layer.cpp" />
     <ClCompile Include="src\Blaze\Core\LayerStack.cpp" />
     <ClCompile Include="src\Blaze\Core\Log.cpp" />

@@ -171,9 +171,6 @@
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>src\Platform\Windows</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\Windows\Windowsinput.h">
-      <Filter>src\Platform\Windows</Filter>
-    </ClInclude>
     <ClInclude Include="src\bzpch.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -1407,9 +1404,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Core\Application.cpp">
-      <Filter>src\Blaze\Core</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Blaze\Core\Input.cpp">
       <Filter>src\Blaze\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Core\Layer.cpp">

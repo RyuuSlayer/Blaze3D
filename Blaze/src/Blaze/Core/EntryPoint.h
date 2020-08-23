@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 	app->Run();
 	BZ_PROFILE_END_SESSION();
 
-	BZ_PROFILE_BEGIN_SESSION("Startup", "BlazeProfile-Shutdown.json");
+	BZ_PROFILE_BEGIN_SESSION("Shutdown", "BlazeProfile-Shutdown.json");
 	delete app;
 	BZ_PROFILE_END_SESSION();
 }

@@ -3,7 +3,7 @@
 
 #include "bzpch.h"
 
-#include "Blaze/Core/Core.h"
+#include "Blaze/Core/Base.h"
 #include "Blaze/Events/Event.h"
 
 namespace Blaze {

@@ -44,12 +44,22 @@
 #endif // End of platform detection
 
 #ifdef BZ_DEBUG
+	#if defined(BZ_PLATFORM_WINDOWS)
+		#define BZ_DEBUGBREAK() __debugbreak()
+	#elif defined(BZ_PLATFORM_LINUX)
+		#include <signal.h>
+		#define BZ_DEBUGBREAK() raise(SIGTRAP)
+	#else
+		#error "Platform doesn't support debugbreak yet!"
+	#endif
 	#define BZ_ENABLE_ASSERTS
+#else
+	#define BZ_DEBUGBREAK()
 #endif
 
 #ifdef BZ_ENABLE_ASSERTS
-	#define BZ_ASSERT(x, ...) { if(!(x)) { BZ_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
-	#define BZ_CORE_ASSERT(x, ...) { if(!(x)) { BZ_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+	#define BZ_ASSERT(x, ...) { if(!(x)) { BZ_ERROR("Assertion Failed: {0}", __VA_ARGS__); BZ_DEBUGBREAK(); } }
+	#define BZ_CORE_ASSERT(x, ...) { if(!(x)) { BZ_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); BZ_DEBUGBREAK(); } }
 #else
 	#define BZ_ASSERT(x, ...)
 	#define BZ_CORE_ASSERT(x, ...)

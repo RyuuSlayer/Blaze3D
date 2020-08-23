@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "Blaze/Core/Core.h"
+#include "Blaze/Core/Base.h"
 
 namespace Blaze {
 

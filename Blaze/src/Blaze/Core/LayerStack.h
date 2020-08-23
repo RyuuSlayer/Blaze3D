@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Blaze/Core/Core.h"
+#include "Blaze/Core/Base.h"
 #include "Blaze/Core/Layer.h"
 
 #include <vector>

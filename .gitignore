@@ -1,14 +1,13 @@
-# Binaries
-**/bin/
-!vendor/bin/premake/
+# Directories
+.vs/
+bin/
 bin-int/
 
-# Blaze files
-*.log
+ # Files
+*.user
+Makefile 
 
 # Visual Studio files and folder
 .vs/
-**.sln
-**.vcxproj
-**.vcxproj.filters
-**.vcxproj.user
+*.sln
+*.vcxproj*

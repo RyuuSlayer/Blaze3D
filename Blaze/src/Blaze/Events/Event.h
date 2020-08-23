@@ -1,7 +1,7 @@
 #pragma once
 #include "bzpch.h"
 
-#include "Blaze/Core/Core.h"
+#include "Blaze/Core/Base.h"
 
 namespace Blaze {
 

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Blaze/Core/Core.h"
+#include "Blaze/Core/Base.h"
 
 #include <spdlog/spdlog.h>
 #include <spdlog/fmt/ostr.h>

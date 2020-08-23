@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Blaze/Core/Core.h"
+#include "Blaze/Core/Base.h"
 
 #include "Blaze/Core/Window.h"
 #include "Blaze/Core/LayerStack.h"

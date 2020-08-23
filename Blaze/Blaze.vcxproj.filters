@@ -60,9 +60,6 @@
     <ClInclude Include="src\Blaze\Core\Application.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blaze\Core\Core.h">
-      <Filter>src\Blaze\Core</Filter>
-    </ClInclude>
     <ClInclude Include="src\Blaze\Core\EntryPoint.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
@@ -1391,6 +1388,9 @@
     </ClInclude>
     <ClInclude Include="src\Blaze\Debug\Instrumentor.h" />
     <ClInclude Include="src\Blaze\Core\MouseCodes.h">
+      <Filter>src\Blaze\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Core\Base.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
   </ItemGroup>

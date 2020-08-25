@@ -6,6 +6,10 @@
 #include <iomanip>
 #include <string>
 #include <thread>
+#include <mutex>
+#include <sstream>
+
+#include "Blaze/Core/Log.h"
 
 namespace Blaze {
 
@@ -27,15 +31,9 @@ namespace Blaze {
 
 	class Instrumentor
 	{
-	private:
-		std::mutex m_Mutex;
-		InstrumentationSession* m_CurrentSession;
-		std::ofstream m_OutputStream;
 	public:
-		Instrumentor()
-			: m_CurrentSession(nullptr)
-		{
-		}
+		Instrumentor(const Instrumentor&) = delete;
+		Instrumentor(Instrumentor&&) = delete;
 
 		void BeginSession(const std::string& name, const std::string& filepath = "results.json")
 		{
@@ -102,8 +100,16 @@ namespace Blaze {
 			static Instrumentor instance;
 			return instance;
 		}
-
 	private:
+		Instrumentor()
+			: m_CurrentSession(nullptr)
+		{
+		}
+
+		~Instrumentor()
+		{
+			EndSession();
+		}
 
 		void WriteHeader()
 		{
@@ -129,7 +135,10 @@ namespace Blaze {
 				m_CurrentSession = nullptr;
 			}
 		}
-
+	private:
+		std::mutex m_Mutex;
+		InstrumentationSession* m_CurrentSession;
+		std::ofstream m_OutputStream;
 	};
 
 	class InstrumentationTimer
@@ -199,7 +208,7 @@ namespace Blaze {
 	// is resolved when the (pre)compiler starts, so the syntax highlighting
 	// could mark the wrong one in your editor!
 	#if defined(__GNUC__) || (defined(__MWERKS__) && (__MWERKS__ >= 0x3000)) || (defined(__ICC) && (__ICC >= 600)) || defined(__ghs__)
-	#	define BZ_FUNC_SIG __PRETTY_FUNCTION__
+		#define BZ_FUNC_SIG __PRETTY_FUNCTION__
 	#elif defined(__DMC__) && (__DMC__ >= 0x810)
 		#define BZ_FUNC_SIG __PRETTY_FUNCTION__
 	#elif (defined(__FUNCSIG__) || (_MSC_VER))
@@ -218,8 +227,10 @@ namespace Blaze {
 
 	#define BZ_PROFILE_BEGIN_SESSION(name, filepath) ::Blaze::Instrumentor::Get().BeginSession(name, filepath)
 	#define BZ_PROFILE_END_SESSION() ::Blaze::Instrumentor::Get().EndSession()
-	#define BZ_PROFILE_SCOPE(name) constexpr auto fixedName = ::Blaze::InstrumentorUtils::CleanupOutputString(name, "__cdecl ");\
-									::Blaze::InstrumentationTimer timer##__LINE__(fixedName.Data)
+	#define BZ_PROFILE_SCOPE_LINE2(name, line) constexpr auto fixedName##line = ::Blaze::InstrumentorUtils::CleanupOutputString(name, "__cdecl ");\
+												   ::Blaze::InstrumentationTimer timer##line(fixedName##line.Data)
+	#define BZ_PROFILE_SCOPE_LINE(name, line) BZ_PROFILE_SCOPE_LINE2(name, line)
+	#define BZ_PROFILE_SCOPE(name) BZ_PROFILE_SCOPE_LINE(name, __LINE__)
 	#define BZ_PROFILE_FUNCTION() BZ_PROFILE_SCOPE(BZ_FUNC_SIG)
 #else
 	#define BZ_PROFILE_BEGIN_SESSION(name, filepath)

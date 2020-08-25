@@ -1,6 +1,7 @@
 #pragma once
-#include "bzpch.h"
+#include <functional>
 
+#include "Blaze/Debug/Instrumentor.h"
 #include "Blaze/Core/Base.h"
 
 namespace Blaze {

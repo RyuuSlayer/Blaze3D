@@ -17,6 +17,11 @@
 
 #include "Blaze/ImGui/ImGuiLayer.h"
 
+#include "Blaze/Scene/Scene.h"
+#include "Blaze/Scene/Entity.h"
+#include "Blaze/Scene/ScriptableEntity.h"
+#include "Blaze/Scene/Components.h"
+
 // ---Renderer------------------------
 #include "Blaze/Renderer/Renderer.h"
 #include "Blaze/Renderer/Renderer2D.h"

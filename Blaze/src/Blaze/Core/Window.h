@@ -1,7 +1,6 @@
-
 #pragma once
 
-#include "bzpch.h"
+#include <sstream>
 
 #include "Blaze/Core/Base.h"
 #include "Blaze/Events/Event.h"

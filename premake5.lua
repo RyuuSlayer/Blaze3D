@@ -23,6 +23,7 @@ IncludeDir["Glad"] = "Blaze/vendor/Glad/include"
 IncludeDir["ImGui"] = "Blaze/vendor/imgui"
 IncludeDir["glm"] = "Blaze/vendor/glm"
 IncludeDir["stb_image"] = "Blaze/vendor/stb_image"
+IncludeDir["entt"] = "Blaze/vendor/entt/include"
 
 group "Dependencies"
 	include "Blaze/vendor/GLFW"
@@ -68,7 +69,8 @@ project "Blaze"
 		"%{IncludeDir.Glad}",
 		"%{IncludeDir.ImGui}",
 		"%{IncludeDir.glm}",
-		"%{IncludeDir.stb_image}"
+		"%{IncludeDir.stb_image}",
+		"%{IncludeDir.entt}"
 	}
 
 	links 
@@ -122,7 +124,8 @@ project "Sandbox"
 		"Blaze/vendor/spdlog/include",
 		"Blaze/src",
 		"Blaze/vendor",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.glm}",
+		"%{IncludeDir.entt}"
 	}
 
 	links
@@ -169,7 +172,8 @@ project "Blaze-Editor"
 		"Blaze/vendor/spdlog/include",
 		"Blaze/src",
 		"Blaze/vendor",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.glm}",
+		"%{IncludeDir.entt}"
 	}
 
 	links

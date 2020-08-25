@@ -22,6 +22,9 @@
     <Filter Include="src\Blaze\Renderer">
       <UniqueIdentifier>{50400C56-3C24-CDAB-A584-C7FE9187B72D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Blaze\Scene">
+      <UniqueIdentifier>{079A98A6-7325-066B-7C36-895FE840626B}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
     </Filter>
@@ -114,6 +117,9 @@
     <ClInclude Include="src\Blaze\Renderer\Buffer.h">
       <Filter>src\Blaze\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Renderer\Camera.h">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Renderer\Framebuffer.h">
       <Filter>src\Blaze\Renderer</Filter>
     </ClInclude>
@@ -146,6 +152,18 @@
     </ClInclude>
     <ClInclude Include="src\Blaze\Renderer\VertexArray.h">
       <Filter>src\Blaze\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Scene\Components.h">
+      <Filter>src\Blaze\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Scene\Entity.h">
+      <Filter>src\Blaze\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Scene\Scene.h">
+      <Filter>src\Blaze\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Scene\SceneCamera.h">
+      <Filter>src\Blaze\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
       <Filter>src\Platform\OpenGL</Filter>
@@ -1401,6 +1419,8 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Scene\ScriptableEntity.h" />
+    <ClInclude Include="src\Blaze\Core\PlatformDetection.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Core\Application.cpp">
@@ -1460,6 +1480,15 @@
     <ClCompile Include="src\Blaze\Renderer\VertexArray.cpp">
       <Filter>src\Blaze\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\Blaze\Scene\Entity.cpp">
+      <Filter>src\Blaze\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\Scene\Scene.cpp">
+      <Filter>src\Blaze\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\Scene\SceneCamera.cpp">
+      <Filter>src\Blaze\Scene</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
@@ -1481,10 +1510,10 @@
     <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\Windows\Windowsinput.cpp">
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\bzpch.cpp">

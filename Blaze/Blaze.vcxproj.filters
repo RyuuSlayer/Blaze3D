@@ -90,6 +90,9 @@
     <ClInclude Include="src\Blaze\Core\MouseCodes.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Core\PlatformDetection.h">
+      <Filter>src\Blaze\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Core\Timestep.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
@@ -163,6 +166,9 @@
       <Filter>src\Blaze\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\Blaze\Scene\SceneCamera.h">
+      <Filter>src\Blaze\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blaze\Scene\ScriptableEntity.h">
       <Filter>src\Blaze\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
@@ -1419,8 +1425,6 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blaze\Scene\ScriptableEntity.h" />
-    <ClInclude Include="src\Blaze\Core\PlatformDetection.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Core\Application.cpp">

@@ -1,13 +1,14 @@
-# Directories
-.vs/
-bin/
+# Binaries
+**/bin/
+!vendor/premake/bin/
 bin-int/
 
- # Files
-*.user
-Makefile 
+# Hazel files
+*.log
 
 # Visual Studio files and folder
 .vs/
-*.sln
-*.vcxproj*
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user

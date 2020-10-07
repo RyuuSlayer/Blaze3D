@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Blaze/Core/Base.h"
-#include "Blaze/Core/Log.h"
 #include "Blaze/Scene/Scene.h"
 #include "Blaze/Scene/Entity.h"
 

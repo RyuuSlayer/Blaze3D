@@ -66,6 +66,9 @@
     <ClInclude Include="src\Blaze\Core\Application.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Core\Assert.h">
+      <Filter>src\Blaze\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Core\Base.h">
       <Filter>src\Blaze\Core</Filter>
     </ClInclude>

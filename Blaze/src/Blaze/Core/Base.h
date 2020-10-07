@@ -18,14 +18,8 @@
 	#define BZ_DEBUGBREAK()
 #endif
 
-// TODO: Make this macro able to take in no arguments except condition
-#ifdef BZ_ENABLE_ASSERTS
-	#define BZ_ASSERT(x, ...) { if(!(x)) { BZ_ERROR("Assertion Failed: {0}", __VA_ARGS__); BZ_DEBUGBREAK(); } }
-	#define BZ_CORE_ASSERT(x, ...) { if(!(x)) { BZ_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); BZ_DEBUGBREAK(); } }
-#else
-	#define BZ_ASSERT(x, ...)
-	#define BZ_CORE_ASSERT(x, ...)
-#endif
+#define BZ_EXPAND_MACRO(x) x
+#define BZ_STRINGIFY_MACRO(x) #x
 
 #define BIT(x) (1 << x)
 
@@ -50,3 +44,6 @@ namespace Blaze {
 	}
 
 }
+
+#include "Blaze/Core/Log.h"
+#include "Blaze/Core/Assert.h"

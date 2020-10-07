@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClInclude Include="src\Blaze.h" />
     <ClInclude Include="src\Blaze\Core\Application.h" />
+    <ClInclude Include="src\Blaze\Core\Assert.h" />
     <ClInclude Include="src\Blaze\Core\Base.h" />
     <ClInclude Include="src\Blaze\Core\EntryPoint.h" />
     <ClInclude Include="src\Blaze\Core\Input.h" />
@@ -651,4 +652,4 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-</Project>
+</Project> 

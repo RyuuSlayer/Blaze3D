@@ -1,5 +1,5 @@
 #include "bzpch.h"
-#include "Framebuffer.h"
+#include "Blaze/Renderer/Framebuffer.h"
 
 #include "Blaze/Renderer/Renderer.h"
 

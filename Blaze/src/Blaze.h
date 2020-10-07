@@ -7,6 +7,7 @@
 #include "Blaze/Core/Application.h"
 #include "Blaze/Core/Layer.h"
 #include "Blaze/Core/Log.h"
+#include "Blaze/Core/Assert.h"
 
 #include "Blaze/Core/Timestep.h"
 

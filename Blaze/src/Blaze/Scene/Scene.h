@@ -2,7 +2,6 @@
 
 #include "entt.hpp"
 
-
 #include "Blaze/Core/Timestep.h"
 
 namespace Blaze {

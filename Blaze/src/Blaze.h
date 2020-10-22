@@ -35,4 +35,4 @@
 #include "Blaze/Renderer/VertexArray.h"
 
 #include "Blaze/Renderer/OrthographicCamera.h"
-// ------------------------------------
+// -----------------------------------

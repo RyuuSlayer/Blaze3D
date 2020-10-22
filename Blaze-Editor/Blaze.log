@@ -1,5 +1,10 @@
-[07:17:35] [info] Blaze: Creating window Blaze App (1280, 720)
-[07:17:35] [info] Blaze: OpenGL Info:
-[07:17:35] [info] Blaze:   Vendor: Intel
-[07:17:35] [info] Blaze:   Renderer: Intel(R) UHD Graphics
-[07:17:35] [info] Blaze:   Version: 4.6.0 - Build 27.20.100.8783
+[10:19:51] [info] Blaze: Creating window Blaze App (1600, 900)
+[10:19:51] [info] Blaze: OpenGL Info:
+[10:19:51] [info] Blaze:   Vendor: Intel
+[10:19:51] [info] Blaze:   Renderer: Intel(R) UHD Graphics
+[10:19:51] [info] Blaze:   Version: 4.6.0 - Build 27.20.100.8853
+[10:19:56] [trace] Blaze: Deserializing scene 'Untitled'
+[10:19:56] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Green Square
+[10:19:56] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Red Square
+[10:19:56] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera A
+[10:19:57] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera B

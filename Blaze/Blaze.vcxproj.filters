@@ -171,6 +171,9 @@
     <ClInclude Include="src\Blaze\Scene\SceneCamera.h">
       <Filter>src\Blaze\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Scene\SceneSerializer.h">
+      <Filter>src\Blaze\Scene</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Scene\ScriptableEntity.h">
       <Filter>src\Blaze\Scene</Filter>
     </ClInclude>
@@ -1494,6 +1497,9 @@
       <Filter>src\Blaze\Scene</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Scene\SceneCamera.cpp">
+      <Filter>src\Blaze\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\Scene\SceneSerializer.cpp">
       <Filter>src\Blaze\Scene</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">

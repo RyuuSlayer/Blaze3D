@@ -1,4 +1,3 @@
-
 #include "bzpch.h"
 #include "Scene.h"
 
@@ -133,5 +132,6 @@ namespace Blaze {
 	void Scene::OnComponentAdded<NativeScriptComponent>(Entity entity, NativeScriptComponent& component)
 	{
 	}
+
 
 }

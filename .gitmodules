@@ -17,3 +17,6 @@
 [submodule "Blaze/vendor/yaml-cpp"]
 	path = Blaze/vendor/yaml-cpp
 	url = https://github.com/thecherno/yaml-cpp
+[submodule "Blaze/vendor/ImGuizmo"]
+	path = Blaze/vendor/ImGuizmo
+	url = https://github.com/thecherno/imguizmo

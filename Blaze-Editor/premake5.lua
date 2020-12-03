@@ -19,7 +19,8 @@ project "Blaze-Editor"
 		"%{wks.location}/Blaze/src",
 		"%{wks.location}/Blaze/vendor",
 		"%{IncludeDir.glm}",
-		"%{IncludeDir.entt}"
+		"%{IncludeDir.entt}",
+		"%{IncludeDir.ImGuizmo}"
 	}
 
 	links

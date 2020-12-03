@@ -19,11 +19,17 @@
     <Filter Include="src\Blaze\ImGui">
       <UniqueIdentifier>{14A2E8A5-802D-566A-893E-D95EF548B26A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Blaze\Math">
+      <UniqueIdentifier>{839C37BF-6F6A-2BC5-58FE-9BEB446B072A}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Blaze\Renderer">
       <UniqueIdentifier>{50400C56-3C24-CDAB-A584-C7FE9187B72D}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Blaze\Scene">
       <UniqueIdentifier>{079A98A6-7325-066B-7C36-895FE840626B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Blaze\Utils">
+      <UniqueIdentifier>{4A2EC6A6-B6B9-336B-BFCA-B65F2BD58F6B}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
@@ -36,6 +42,9 @@
     </Filter>
     <Filter Include="vendor">
       <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\ImGuizmo">
+      <UniqueIdentifier>{73BF7F4C-DF4A-ED10-E85B-700554664911}</UniqueIdentifier>
     </Filter>
     <Filter Include="vendor\glm">
       <UniqueIdentifier>{829FC5A8-6E57-07F6-D75E-E051C335A2E6}</UniqueIdentifier>
@@ -120,6 +129,9 @@
     <ClInclude Include="src\Blaze\ImGui\ImGuiLayer.h">
       <Filter>src\Blaze\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Math\Math.h">
+      <Filter>src\Blaze\Math</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Renderer\Buffer.h">
       <Filter>src\Blaze\Renderer</Filter>
     </ClInclude>
@@ -177,6 +189,9 @@
     <ClInclude Include="src\Blaze\Scene\ScriptableEntity.h">
       <Filter>src\Blaze\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Utils\PlatformUtils.h">
+      <Filter>src\Blaze\Utils</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
@@ -203,6 +218,9 @@
     </ClInclude>
     <ClInclude Include="src\bzpch.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\ImGuizmo\ImGuizmo.h">
+      <Filter>vendor\ImGuizmo</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\common.hpp">
       <Filter>vendor\glm\glm</Filter>
@@ -1431,7 +1449,6 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blaze\Utils\PlatformUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Blaze\Core\Application.cpp">
@@ -1454,6 +1471,9 @@
     </ClCompile>
     <ClCompile Include="src\Blaze\ImGui\ImGuiLayer.cpp">
       <Filter>src\Blaze\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\Math\Math.cpp">
+      <Filter>src\Blaze\Math</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Renderer\Buffer.cpp">
       <Filter>src\Blaze\Renderer</Filter>
@@ -1527,15 +1547,20 @@
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsPlatformUtils.cpp">
+      <Filter>src\Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\bzpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="vendor\ImGuizmo\ImGuizmo.cpp">
+      <Filter>vendor\ImGuizmo</Filter>
+    </ClCompile>
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsPlatformUtils.cpp" />
   </ItemGroup>
 </Project>

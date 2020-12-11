@@ -1,10 +1,10 @@
-[04:52:54] [info] Blaze: Creating window Blaze App (1600, 900)
-[04:52:54] [info] Blaze: OpenGL Info:
-[04:52:54] [info] Blaze:   Vendor: Intel
-[04:52:54] [info] Blaze:   Renderer: Intel(R) UHD Graphics
-[04:52:54] [info] Blaze:   Version: 4.6.0 - Build 27.20.100.8935
-[04:53:09] [trace] Blaze: Deserializing scene 'Untitled'
-[04:53:09] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Top
-[04:53:09] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera
-[04:53:09] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Right
-[04:53:09] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Left
+[08:44:27] [info] Blaze: Creating window Blaze App (1600, 900)
+[08:44:28] [info] Blaze: OpenGL Info:
+[08:44:28] [info] Blaze:   Vendor: Intel
+[08:44:28] [info] Blaze:   Renderer: Intel(R) UHD Graphics
+[08:44:28] [info] Blaze:   Version: 4.6.0 - Build 27.20.100.8935
+[08:44:36] [trace] Blaze: Deserializing scene 'Untitled'
+[08:44:36] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Top
+[08:44:36] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera
+[08:44:36] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Right
+[08:44:36] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Left

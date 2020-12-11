@@ -3,6 +3,8 @@
 #include "Blaze.h"
 #include "Panels/SceneHierarchyPanel.h"
 
+#include "Blaze/Renderer/EditorCamera.h"
+
 namespace Blaze {
 
 	class EditorLayer : public Layer
@@ -37,6 +39,8 @@ namespace Blaze {
 		Entity m_SecondCamera;
 
 		bool m_PrimaryCamera = true;
+
+		EditorCamera m_EditorCamera;
 
 		Ref<Texture2D> m_CheckerboardTexture;
 

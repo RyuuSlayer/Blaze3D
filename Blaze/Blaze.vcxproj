@@ -167,6 +167,7 @@
     <ClInclude Include="src\Blaze\Math\Math.h" />
     <ClInclude Include="src\Blaze\Renderer\Buffer.h" />
     <ClInclude Include="src\Blaze\Renderer\Camera.h" />
+    <ClInclude Include="src\Blaze\Renderer\EditorCamera.h" />
     <ClInclude Include="src\Blaze\Renderer\Framebuffer.h" />
     <ClInclude Include="src\Blaze\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Blaze\Renderer\OrthographicCamera.h" />
@@ -615,6 +616,7 @@
     <ClCompile Include="src\Blaze\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Blaze\Math\Math.cpp" />
     <ClCompile Include="src\Blaze\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Blaze\Renderer\EditorCamera.cpp" />
     <ClCompile Include="src\Blaze\Renderer\Framebuffer.cpp" />
     <ClCompile Include="src\Blaze\Renderer\GraphicsContext.cpp" />
     <ClCompile Include="src\Blaze\Renderer\OrthographicCamera.cpp" />

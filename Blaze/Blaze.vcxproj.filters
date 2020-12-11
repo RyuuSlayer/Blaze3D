@@ -138,6 +138,9 @@
     <ClInclude Include="src\Blaze\Renderer\Camera.h">
       <Filter>src\Blaze\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blaze\Renderer\EditorCamera.h">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blaze\Renderer\Framebuffer.h">
       <Filter>src\Blaze\Renderer</Filter>
     </ClInclude>
@@ -1476,6 +1479,9 @@
       <Filter>src\Blaze\Math</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Renderer\Buffer.cpp">
+      <Filter>src\Blaze\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Blaze\Renderer\EditorCamera.cpp">
       <Filter>src\Blaze\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\Blaze\Renderer\Framebuffer.cpp">

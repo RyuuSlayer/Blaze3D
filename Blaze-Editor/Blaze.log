@@ -1,10 +1,25 @@
-[08:44:27] [info] Blaze: Creating window Blaze App (1600, 900)
-[08:44:28] [info] Blaze: OpenGL Info:
-[08:44:28] [info] Blaze:   Vendor: Intel
-[08:44:28] [info] Blaze:   Renderer: Intel(R) UHD Graphics
-[08:44:28] [info] Blaze:   Version: 4.6.0 - Build 27.20.100.8935
-[08:44:36] [trace] Blaze: Deserializing scene 'Untitled'
-[08:44:36] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Top
-[08:44:36] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera
-[08:44:36] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Right
-[08:44:36] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Left
+[18:10:23] [info] Blaze: Creating window Blaze App (1600, 900)
+[18:10:23] [info] Blaze: OpenGL Info:
+[18:10:23] [info] Blaze:   Vendor: NVIDIA Corporation
+[18:10:23] [info] Blaze:   Renderer: GeForce GTX 1080 Ti/PCIe/SSE2
+[18:10:23] [info] Blaze:   Version: 4.6.0 NVIDIA 461.09
+[18:10:35] [trace] Blaze: Deserializing scene 'Untitled'
+[18:10:35] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Top
+[18:10:35] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera
+[18:10:35] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Right
+[18:10:35] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Left
+[18:11:53] [trace] Blaze: Deserializing scene 'Untitled'
+[18:11:53] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Green Square
+[18:11:53] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Red Square
+[18:11:53] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera A
+[18:11:53] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera B
+[18:12:31] [trace] Blaze: Deserializing scene 'Untitled'
+[18:12:31] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera B
+[18:12:31] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera A
+[18:12:31] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Red Square
+[18:12:31] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Green Square
+[18:12:42] [trace] Blaze: Deserializing scene 'Untitled'
+[18:12:42] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Top
+[18:12:42] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera
+[18:12:42] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Right
+[18:12:42] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Left

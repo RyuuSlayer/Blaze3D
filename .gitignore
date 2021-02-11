@@ -13,3 +13,4 @@ bin-int/
 **.vcxproj.filters
 **.vcxproj.user
 *.log
+Blaze-Editor/Blaze.log

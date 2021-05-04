@@ -2,7 +2,7 @@ project "Blaze-Editor"
 	kind "ConsoleApp"
 	language "C++"
 	cppdialect "C++17"
-	staticruntime "on"
+	staticruntime "off"
 
 	targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
@@ -26,6 +26,11 @@ project "Blaze-Editor"
 	links
 	{
 		"Blaze"
+	}
+
+	postbuildcommands
+	{
+		"{COPY} %{LibraryDir.VulkanSDK_DLL} %{wks.location}/bin/" .. outputdir .. "/%{prj.name}"
 	}
 
 	filter "system:windows"

@@ -12,5 +12,8 @@ bin-int/
 **.vcxproj
 **.vcxproj.filters
 **.vcxproj.user
-*.log
-Blaze-Editor/Blaze.log
+
+# Directories
+Blaze/vendor/VulkanSDK
+Blaze-Editor/assets/cache
+scripts/__pycache__

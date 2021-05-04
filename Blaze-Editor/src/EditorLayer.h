@@ -21,6 +21,7 @@ namespace Blaze {
 		void OnEvent(Event& e) override;
 	private:
 		bool OnKeyPressed(KeyPressedEvent& e);
+		bool OnMouseButtonPressed(MouseButtonPressedEvent& e);
 
 		void NewScene();
 		void OpenScene();
@@ -37,6 +38,8 @@ namespace Blaze {
 		Entity m_SquareEntity;
 		Entity m_CameraEntity;
 		Entity m_SecondCamera;
+
+		Entity m_HoveredEntity;
 
 		bool m_PrimaryCamera = true;
 

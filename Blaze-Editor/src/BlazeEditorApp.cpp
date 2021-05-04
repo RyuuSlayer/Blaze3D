@@ -8,7 +8,8 @@ namespace Blaze {
 	class BlazeEditor : public Application
 	{
 	public:
-		BlazeEditor()
+		BlazeEditor(ApplicationCommandLineArgs args)
+			: Application("BlazeEditor", args)
 		{
 			PushLayer(new EditorLayer());
 		}
@@ -18,9 +19,8 @@ namespace Blaze {
 		}
 	};
 
-	Application* CreateApplication()
+	Application* CreateApplication(ApplicationCommandLineArgs args)
 	{
-		return new BlazeEditor();
+		return new BlazeEditor(args);
 	}
 }
-

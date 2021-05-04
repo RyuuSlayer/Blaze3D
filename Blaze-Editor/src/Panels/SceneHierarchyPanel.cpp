@@ -61,6 +61,11 @@ namespace Blaze {
 		ImGui::End();
 	}
 
+	void SceneHierarchyPanel::SetSelectedEntity(Entity entity)
+	{
+		m_SelectionContext = entity;
+	}
+
 	void SceneHierarchyPanel::DrawEntityNode(Entity entity)
 	{
 		auto& tag = entity.GetComponent<TagComponent>().Tag;

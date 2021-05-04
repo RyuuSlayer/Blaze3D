@@ -76,7 +76,7 @@ namespace Blaze {
 			return false;
 		}
 
-		static GLenum BlazeFBTextureFormatToGL(FramebufferTextureFormat format)
+		static GLenum HazelFBTextureFormatToGL(FramebufferTextureFormat format)
 		{
 			switch (format)
 			{
@@ -219,7 +219,7 @@ namespace Blaze {
 
 		auto& spec = m_ColorAttachmentSpecifications[attachmentIndex];
 		glClearTexImage(m_ColorAttachments[attachmentIndex], 0,
-			Utils::BlazeFBTextureFormatToGL(spec.TextureFormat), GL_INT, &value);
+			Utils::HazelFBTextureFormatToGL(spec.TextureFormat), GL_INT, &value);
 	}
 
 }

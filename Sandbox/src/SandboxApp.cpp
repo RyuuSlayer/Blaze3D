@@ -8,7 +8,7 @@
 class Sandbox : public Blaze::Application
 {
 public:
-	Sandbox()
+	Sandbox(Blaze::ApplicationCommandLineArgs args)
 	{
 		// PushLayer(new ExampleLayer());
 		PushLayer(new Sandbox2D());
@@ -19,7 +19,7 @@ public:
 	}
 };
 
-Blaze::Application* Blaze::CreateApplication()
+Blaze::Application* Blaze::CreateApplication(Blaze::ApplicationCommandLineArgs args)
 {
-	return new Sandbox();
+	return new Sandbox(args);
 }

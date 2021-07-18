@@ -1,4 +1,4 @@
--- Blaze Dependencies
+ -- Blaze Dependencies
 
 VULKAN_SDK = os.getenv("VULKAN_SDK")
 
@@ -19,6 +19,7 @@ LibraryDir = {}
 
 LibraryDir["VulkanSDK"] = "%{VULKAN_SDK}/Lib"
 LibraryDir["VulkanSDK_Debug"] = "%{wks.location}/Blaze/vendor/VulkanSDK/Lib"
+LibraryDir["VulkanSDK_DebugDLL"] = "%{wks.location}/Blaze/vendor/VulkanSDK/Bin"
 
 Library = {}
 Library["Vulkan"] = "%{LibraryDir.VulkanSDK}/vulkan-1.lib"

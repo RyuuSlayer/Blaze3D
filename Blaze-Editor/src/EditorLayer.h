@@ -2,6 +2,7 @@
 
 #include "Blaze.h"
 #include "Panels/SceneHierarchyPanel.h"
+#include "Panels/ContentBrowserPanel.h"
 
 #include "Blaze/Renderer/EditorCamera.h"
 
@@ -57,6 +58,7 @@ namespace Blaze {
 
 		// Panels
 		SceneHierarchyPanel m_SceneHierarchyPanel;
+		ContentBrowserPanel m_ContentBrowserPanel;
 	};
 
 }

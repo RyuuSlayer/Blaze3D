@@ -1,35 +1,30 @@
-[03:05:25] [info] Blaze: Creating window BlazeEditor (1600, 900)
-[03:05:25] [info] Blaze: OpenGL Info:
-[03:05:25] [info] Blaze:   Vendor: NVIDIA Corporation
-[03:05:25] [info] Blaze:   Renderer: NVIDIA GeForce GTX 1080 Ti/PCIe/SSE2
-[03:05:25] [info] Blaze:   Version: 4.6.0 NVIDIA 470.25
-[03:05:30] [trace] Blaze: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Texture.glsl
-[03:05:30] [trace] Blaze:     1 uniform buffers
-[03:05:30] [trace] Blaze:     0 resources
-[03:05:30] [trace] Blaze: Uniform buffers:
-[03:05:30] [trace] Blaze:   _47_49
-[03:05:30] [trace] Blaze:     Size = 64
-[03:05:30] [trace] Blaze:     Binding = 0
-[03:05:30] [trace] Blaze:     Members = 1
-[03:05:30] [trace] Blaze: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Texture.glsl
-[03:05:30] [trace] Blaze:     0 uniform buffers
-[03:05:30] [trace] Blaze:     1 resources
-[03:05:30] [trace] Blaze: Uniform buffers:
-[03:05:33] [warning] Blaze: Shader creation took 7806.807 ms
-[03:05:47] [trace] Blaze: Deserializing scene 'Untitled'
-[03:05:47] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Green Square
-[03:05:47] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Red Square
-[03:05:47] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera A
-[03:05:47] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera B
-[03:05:47] [error] Blaze: Program/shader state performance warning: Vertex shader in program 2 is being recompiled based on GL state.
-[03:05:47] [error] Blaze: Program/shader state performance warning: Vertex shader in program 2 is being recompiled based on GL state, and was not found in the disk cache
-[03:06:25] [trace] Blaze: Deserializing scene 'Untitled'
-[03:06:25] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera B
-[03:06:25] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera A
-[03:06:25] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Red Square
-[03:06:25] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Green Square
-[03:06:30] [trace] Blaze: Deserializing scene 'Untitled'
-[03:06:30] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Top
-[03:06:30] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera
-[03:06:30] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Right
-[03:06:30] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Left
+[15:42:42] [info] Blaze: Creating window BlazeEditor (1600, 900)
+[15:42:43] [info] Blaze: OpenGL Info:
+[15:42:43] [info] Blaze:   Vendor: NVIDIA Corporation
+[15:42:43] [info] Blaze:   Renderer: NVIDIA GeForce GTX 1080 Ti/PCIe/SSE2
+[15:42:43] [info] Blaze:   Version: 4.6.0 NVIDIA 466.63
+[15:42:43] [trace] Blaze: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Texture.glsl
+[15:42:43] [trace] Blaze:     1 uniform buffers
+[15:42:43] [trace] Blaze:     0 resources
+[15:42:43] [trace] Blaze: Uniform buffers:
+[15:42:43] [trace] Blaze:   _47_49
+[15:42:43] [trace] Blaze:     Size = 64
+[15:42:43] [trace] Blaze:     Binding = 0
+[15:42:43] [trace] Blaze:     Members = 1
+[15:42:43] [trace] Blaze: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Texture.glsl
+[15:42:43] [trace] Blaze:     0 uniform buffers
+[15:42:43] [trace] Blaze:     1 resources
+[15:42:43] [trace] Blaze: Uniform buffers:
+[15:42:43] [warning] Blaze: Shader creation took 108.90421 ms
+[15:42:55] [trace] Blaze: Deserializing scene 'Untitled'
+[15:42:55] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Green Square
+[15:42:55] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Red Square
+[15:42:55] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera A
+[15:42:55] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera B
+[15:42:55] [error] Blaze: Program/shader state performance warning: Vertex shader in program 2 is being recompiled based on GL state.
+[15:42:55] [error] Blaze: Program/shader state performance warning: Vertex shader in program 2 is being recompiled based on GL state, and was not found in the disk cache
+[15:43:59] [trace] Blaze: Deserializing scene 'Untitled'
+[15:43:59] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Top
+[15:43:59] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Camera
+[15:43:59] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Right
+[15:43:59] [trace] Blaze: Deserialized entity with ID = 12837192831273, name = Left

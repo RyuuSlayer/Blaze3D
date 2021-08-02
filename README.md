@@ -1,6 +1,8 @@
 # Blaze3D
 Blaze is primarily an early-stage interactive application and rendering engine for Windows.
 
+![Poster](https://user-images.githubusercontent.com/33106127/127789946-0278c1aa-2166-4995-8426-ddfe62319073.png)
+
 # Getting Started
 Visual Studio 2017 or 2019 is recommended, Blaze is officially untested on other development environments whilst we focus on a Windows build.
 
